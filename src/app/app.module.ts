@@ -13,7 +13,8 @@ import { Graficas1Component } from './pages/graficas1/graficas1.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
-
+import { APP_ROUTES } from './app.routes';
+import { PagesComponent } from './pages/pages.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +28,12 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
     Graficas1Component,
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    PagesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]
