@@ -4,6 +4,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from "./login/login.component";
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 import { PagesComponent } from './pages/pages.component';
+import { RegisterComponent } from "./login/register/register.component";
 
 const appRoutes: Routes = [
     {
@@ -24,6 +25,10 @@ const appRoutes: Routes = [
     {
         path: 'login',
         component: LoginComponent
+    },
+    {
+        path: 'registrar',
+        component: RegisterComponent
     },
     {
         path: '**',
